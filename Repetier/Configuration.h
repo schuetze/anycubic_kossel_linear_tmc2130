@@ -562,7 +562,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define Z_PROBE_BED_DISTANCE 8
 #define Z_PROBE_PIN ORIG_Z_MIN_PIN
 #define Z_PROBE_PULLUP 1
-#define Z_PROBE_ON_HIGH 1
+#define Z_PROBE_ON_HIGH 0
 #define Z_PROBE_X_OFFSET 0
 #define Z_PROBE_Y_OFFSET 0
 #define Z_PROBE_WAIT_BEFORE_TEST 0
@@ -1009,7 +1009,7 @@ Values must be in range 1..255
     "zProbeBedDistance": 8,
     "zProbeDisableHeaters": "1",
     "zProbePullup": "1",
-    "zProbeOnHigh": "1",
+    "zProbeOnHigh": "0",
     "zProbeXOffset": 0,
     "zProbeYOffset": 0,
     "zProbeWaitBeforeTest": "0",
