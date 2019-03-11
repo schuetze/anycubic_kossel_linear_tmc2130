@@ -463,6 +463,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define DRV_TMC2130
 
 // Uncomment if you use the stall guard for homing. Only for cartesian printers and xy direction
+#define SENSORLESS_HOMING
 
 // The drivers with set CS pin will be used, all others are normal step/dir/enable drivers
 #define TMC2130_X_CS_PIN 4
@@ -1296,7 +1297,7 @@ Values must be in range 1..255
     "distortionLimitTo": 2,
     "automaticPowerup": "0",
     "hasTMC2130": "1",
-    "TMC2130Sensorless": "0",
+    "TMC2130Sensorless": "1",
     "TMC2130Steathchop": "1",
     "TMC2130Interpolate256": "1",
     "TMC2130StallguardSensitivity": 0,
