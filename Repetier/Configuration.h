@@ -245,14 +245,14 @@ It also can add a delay to wait for spindle to run on full speed.
 
 #define MULTI_ZENDSTOP_HOMING 0
 #define ENDSTOP_PULLUP_X_MIN true
-#define ENDSTOP_X_MIN_INVERTING true
-#define MIN_HARDWARE_ENDSTOP_X true
+#define ENDSTOP_X_MIN_INVERTING false
+#define MIN_HARDWARE_ENDSTOP_X false
 #define ENDSTOP_PULLUP_Y_MIN true
-#define ENDSTOP_Y_MIN_INVERTING true
-#define MIN_HARDWARE_ENDSTOP_Y true
+#define ENDSTOP_Y_MIN_INVERTING false
+#define MIN_HARDWARE_ENDSTOP_Y false
 #define ENDSTOP_PULLUP_Z_MIN true
-#define ENDSTOP_Z_MIN_INVERTING true
-#define MIN_HARDWARE_ENDSTOP_Z true
+#define ENDSTOP_Z_MIN_INVERTING false
+#define MIN_HARDWARE_ENDSTOP_Z false
 #define ENDSTOP_PULLUP_Z2_MINMAX true
 #define ENDSTOP_Z2_MINMAX_INVERTING false
 #define MINMAX_HARDWARE_ENDSTOP_Z2 false
@@ -288,9 +288,9 @@ It also can add a delay to wait for spindle to run on full speed.
 
 #define max_software_endstop_r true
 
-#define min_software_endstop_x false
-#define min_software_endstop_y false
-#define min_software_endstop_z false
+#define min_software_endstop_x true
+#define min_software_endstop_y true
+#define min_software_endstop_z true
 #define max_software_endstop_x false
 #define max_software_endstop_y false
 #define max_software_endstop_z false
@@ -463,7 +463,6 @@ It also can add a delay to wait for spindle to run on full speed.
 #define DRV_TMC2130
 
 // Uncomment if you use the stall guard for homing. Only for cartesian printers and xy direction
-#define SENSORLESS_HOMING
 
 // The drivers with set CS pin will be used, all others are normal step/dir/enable drivers
 #define TMC2130_X_CS_PIN 4
@@ -562,7 +561,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define Z_PROBE_BED_DISTANCE 8
 #define Z_PROBE_PIN ORIG_Z_MIN_PIN
 #define Z_PROBE_PULLUP 1
-#define Z_PROBE_ON_HIGH 0
+#define Z_PROBE_ON_HIGH 1
 #define Z_PROBE_X_OFFSET 0
 #define Z_PROBE_Y_OFFSET 0
 #define Z_PROBE_WAIT_BEFORE_TEST 0
@@ -755,9 +754,9 @@ Values must be in range 1..255
     ],
     "uiLanguage": 0,
     "uiController": 0,
-    "xMinEndstop": 1,
-    "yMinEndstop": 1,
-    "zMinEndstop": 1,
+    "xMinEndstop": 0,
+    "yMinEndstop": 0,
+    "zMinEndstop": 0,
     "xMaxEndstop": 2,
     "yMaxEndstop": 2,
     "zMaxEndstop": 2,
@@ -1009,7 +1008,7 @@ Values must be in range 1..255
     "zProbeBedDistance": 8,
     "zProbeDisableHeaters": "1",
     "zProbePullup": "1",
-    "zProbeOnHigh": "0",
+    "zProbeOnHigh": "1",
     "zProbeXOffset": 0,
     "zProbeYOffset": 0,
     "zProbeWaitBeforeTest": "0",
@@ -1297,7 +1296,7 @@ Values must be in range 1..255
     "distortionLimitTo": 2,
     "automaticPowerup": "0",
     "hasTMC2130": "1",
-    "TMC2130Sensorless": "1",
+    "TMC2130Sensorless": "0",
     "TMC2130Steathchop": "1",
     "TMC2130Interpolate256": "1",
     "TMC2130StallguardSensitivity": 0,
