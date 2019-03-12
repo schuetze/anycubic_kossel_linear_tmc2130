@@ -246,13 +246,13 @@ It also can add a delay to wait for spindle to run on full speed.
 #define MULTI_ZENDSTOP_HOMING 0
 #define ENDSTOP_PULLUP_X_MIN true
 #define ENDSTOP_X_MIN_INVERTING false
-#define MIN_HARDWARE_ENDSTOP_X false
+#define MIN_HARDWARE_ENDSTOP_X true
 #define ENDSTOP_PULLUP_Y_MIN true
 #define ENDSTOP_Y_MIN_INVERTING false
-#define MIN_HARDWARE_ENDSTOP_Y false
+#define MIN_HARDWARE_ENDSTOP_Y true
 #define ENDSTOP_PULLUP_Z_MIN true
 #define ENDSTOP_Z_MIN_INVERTING false
-#define MIN_HARDWARE_ENDSTOP_Z false
+#define MIN_HARDWARE_ENDSTOP_Z true
 #define ENDSTOP_PULLUP_Z2_MINMAX true
 #define ENDSTOP_Z2_MINMAX_INVERTING false
 #define MINMAX_HARDWARE_ENDSTOP_Z2 false
@@ -288,9 +288,9 @@ It also can add a delay to wait for spindle to run on full speed.
 
 #define max_software_endstop_r true
 
-#define min_software_endstop_x true
-#define min_software_endstop_y true
-#define min_software_endstop_z true
+#define min_software_endstop_x false
+#define min_software_endstop_y false
+#define min_software_endstop_z false
 #define max_software_endstop_x false
 #define max_software_endstop_y false
 #define max_software_endstop_z false
@@ -755,9 +755,9 @@ Values must be in range 1..255
     ],
     "uiLanguage": 0,
     "uiController": 0,
-    "xMinEndstop": 0,
-    "yMinEndstop": 0,
-    "zMinEndstop": 0,
+    "xMinEndstop": 1,
+    "yMinEndstop": 1,
+    "zMinEndstop": 1,
     "xMaxEndstop": 2,
     "yMaxEndstop": 2,
     "zMaxEndstop": 2,
